@@ -2,6 +2,8 @@
 layout: home
 ---
 
+# Documentación de Talos
+
 ## ¿Qué es Talos Editor?
 
 ​Talos Editor es un entorno de desarrollo de librojuegos construido con tecnologías web, enfocado en la simplicidad y en reducir las frustraciones durante el proceso creativo.
@@ -22,4 +24,4 @@ Después de barajar todas las secciones, todos sus encabezados se numeran en sec
 
 Todos los enlaces en el documento se actualizarán finalmente para mostrar el número al que se refieren. Si por ejemplo en el documento documento original ponía "ver primera_sala" (donde primera_sala es un enlace válido, no solo texto) se convertirá en algo como "ver 12".
 
-La mejor manera de aprender es probablemente experimentar con los botones y jugar  con el entorno.
+La mejor manera de aprender es probablemente experimentar con los botones, jugar  con el entorno.
