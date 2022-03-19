@@ -25,4 +25,4 @@ Los metadatos que actualmente usa talos son: **title, author, lang, publisher, d
 
 - **output:** Los formatos de salida soportados por talos son: *html*, *epub*, *docx* y *pdf*.
 - **turn_to:** Para especificar qué texto va a preceder a cada enlace, es decir el clásico "ve a la sección X".
-- **lang:** Especifica la lengua que usará el documento, por ahora talos solo soporta: español (**es**), inglés (**en**), hindi (**hi**) y vietnamita (**vi**) para todos los formatos de salida.
+- **lang:** Especifica la lengua que usará el documento, por ahora Talos solo soporta: español (**es**), inglés (**en**), hindi (**hi**) y vietnamita (**vi**) para todos los formatos de salida.
