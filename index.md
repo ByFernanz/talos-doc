@@ -2,78 +2,24 @@
 layout: home
 ---
 
-Make Jelly site have a GitBook look!
+## ¿Qué es Talos Editor?
 
-## Demo
+​Talos Editor es un entorno de desarrollo de librojuegos construido con tecnologías web, enfocado en la simplicidad y en reducir las frustraciones durante el proceso creativo.
 
-Live demo on Github Pages: [https://sighingnow.github.io/jekyll-gitbook](https://sighingnow.github.io/jekyll-gitbook)
+La herramienta toma prestadas  las mecánicas de diseño de Pangamebook​ (un filtro de Pandoc para generar también librojuegos), expande sus características y las envuelve en un entorno moderno, productivo y amigable, sin dependencias externas, todo desde el navegador.
 
-[![Jekyll Themes](https://img.shields.io/badge/featured%20on-JekyllThemes-red.svg)](https://jekyll-themes.com/jekyll-gitbook/)
+## ¿Qué hace exactamente Talos?
 
-## Why Jekyll with GitBook
+Talos busca todos los encabezados de nivel superior (**#**) que contienen solo letras minúsculas, dígitos y guiones bajos. Los encabezados como *inicio* , *primera_sala* o *encontrando_un_botín_23* se verán afectados, pero los encabezados como *Introducción* , *Cómo jugar* , F*icha de personaje* o *Epílogo* se ignorarán.
 
-GitBook is an amazing frontend style to present and organize contents (such as book chapters
-and blogs) on Web. The typical to deploy GitBook at [Github Pages][1]
-is building HTML files locally and then push to Github repository, usually to the `gh-pages`
-branch. It's quite annoying to repeat such workload and make it hard for people do version
-control via git for when there are generated HTML files to be staged in and out.
+Un encabezado de nivel superior que sea un número también se ignorará, ya que ese número se usará tal cual.
 
-This theme takes style definition out of generated GitBook site and provided the template
-for Jekyll to rendering markdown documents to HTML, thus the whole site can be deployed
-to [Github Pages][1] without generating and uploading HTML bundle every time when there are
-changes to the original repo.
+Talos mezcla todos los encabezados afectados junto con todo lo que sigue hasta el siguiente encabezado de nivel superior, incluidos los encabezados de nivel inferior y todo el texto, las imágenes y las tablas, etc. Esa colección de cosas que se mueve junto con el encabezado se considera una sección .
 
-## How to Get Started
+Las secciones nunca se moverán de antes de un encabezado de nivel superior *ignorado* a después de ese encabezado, o viceversa. Un efecto importante de esto es que los encabezados que son números, como el 1 , permanecerán donde están , y también dividirán naturalmente el librojuego en partes que evitan que la historia salte demasiado. La mayoría de los libros probablemente tendrán un encabezado 1 para marcar el comienzo de la historia, asi se garantiza que seguirá siendo el primero en la salida también. Si el último encabezado tiene un número suficientemente alto (por ejemplo, 400 ), seguirá siendo el último. Cualquier otro encabezado también puede tener un número para corregirlo en la historia, pero si hay demasiadas secciones para barajar entre encabezados fijos, Talos no estará contento (por ejemplo, si baraja entre 1 y 400 , pero en realidad hay 410 secciones en el libro).
 
-This theme can be used just as other [Jekyll themes][1].
+Después de barajar todas las secciones, todos sus encabezados se numeran en secuencia. Es posible que se creen espacios donde hay encabezados a los que se les dio un número fijo. Los encabezados que ya eran números, como se mencionó anteriormente, no se verán afectados.
 
-[Fork][3] this repository and add your markdown posts to the `_posts` folder.
+Todos los enlaces en el documento se actualizarán finalmente para mostrar el número al que se refieren. Si por ejemplo en el documento documento original ponía "ver primera_sala" (donde primera_sala es un enlace válido, no solo texto) se convertirá en algo como "ver 12".
 
-### Deploy Locally with Jekyll Serve
-
-This theme can be ran locally using Ruby and Gemfiles.
-
-[Testing your GitHub Pages site locally with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll) - GitHub
-
-## Full-text search
-
-The search functionality in jekyll-gitbook theme is powered by the [gitbook-plugin-search-pro][5] plugin and is enabled by default.
-
-[https://sighingnow.github.io/jekyll-gitbook/?q=generated](https://sighingnow.github.io/jekyll-gitbook/?q=generated)
-
-## Code highlight
-
-The code highlight style is configurable the following entry in `_config.yaml`:
-
-```yaml
-syntax_highlighter_style: colorful
-```
-
-The default code highlight style is `colorful`, the full supported styles can be found from [the rouge repository][6]. Customized
-style can be added to [./gitbook/rouge/](./gitbook/rouge/).
-
-## How to generate TOC
-
-The jekyll-gitbook theme leverages [jekyll-toc][4] to generate the *Contents* for the page.
-The TOC feature is not enabled by default. To use the TOC feature, modify the TOC
-configuration in `_config.yml`:
-
-```yaml
-toc:
-    enabled: true
-    h_min: 1
-    h_max: 3
-```
-
-## License
-
-This work is open sourced under the Apache License, Version 2.0.
-
-Copyright 2019 Tao He.
-
-[1]: https://pages.github.com
-[2]: https://pages.github.com/themes
-[3]: https://github.com/sighingnow/jekyll-gitbook/fork
-[4]: https://github.com/allejo/jekyll-toc
-[5]: https://github.com/gitbook-plugins/gitbook-plugin-search-pro
-[6]: https://github.com/rouge-ruby/rouge/tree/master/lib/rouge/themes
+La mejor manera de aprender es probablemente experimentar con los botones y jugar  con el entorno.
