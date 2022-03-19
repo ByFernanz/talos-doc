@@ -24,5 +24,5 @@ tags: [terror, fantasia]
 Los metadatos que actualmente usa talos son: **title, author, lang, publisher, description, output, tags y turn_to**. Ninguno es obligatorio pero se recomienda por lo menos especificar el título, el autor y el formato de salida del documento.
 
 - **output:** Los formatos de salida soportados por talos son: *html*, *epub*, *docx* y *pdf*.
-- **turn_to:** Para especificar qué texto va a preceder a cada enlace, es decir el clásico "ve a la sección X".
+- **turn_to:** Se usa para para especificar qué texto va a preceder a cada enlace, es decir el clásico "ve a la sección X".
 - **lang:** Especifica la lengua que usará el documento, por ahora Talos solo soporta: español (**es**), inglés (**en**), hindi (**hi**) y vietnamita (**vi**) para todos los formatos de salida.
