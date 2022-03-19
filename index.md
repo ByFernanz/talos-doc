@@ -2,10 +2,6 @@
 layout: home
 ---
 
-# Documentación de Talos
-
-## ¿Qué es Talos Editor?
-
 ​Talos Editor es un entorno de desarrollo de librojuegos construido con tecnologías web, enfocado en la simplicidad y en reducir las frustraciones durante el proceso creativo.
 
 La herramienta toma prestadas  las mecánicas de diseño de Pangamebook​ (un filtro de Pandoc para generar también librojuegos), expande sus características y las envuelve en un entorno moderno, productivo y amigable, sin dependencias externas, todo desde el navegador.
