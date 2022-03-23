@@ -1,7 +1,7 @@
 ---
 title: Diagrama de flujo
 author: Billy Y. Fernández
-date: 2022-03-23
+date: 2022-03-20
 category: Jekyll
 layout: post
 ---

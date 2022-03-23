@@ -1,7 +1,7 @@
 ---
 title: Secciones
 author: Billy Y. Fernández
-date: 2022-03-19
+date: 2022-03-22
 category: Jekyll
 layout: post
 ---
