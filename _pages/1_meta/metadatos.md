@@ -17,6 +17,8 @@ lang: es
 publisher: Textagames
 output: docx
 turn_to: ve a la sección
+titled_sections: false
+hide_sections: false
 tags: [terror, fantasia]
 ---
 ~~~
@@ -26,3 +28,5 @@ Los metadatos que actualmente usa talos son: **title, author, lang, publisher, d
 - **output:** Los formatos de salida soportados por talos son: *html*, *epub*, *docx* y *pdf*.
 - **turn_to:** Se usa para para especificar qué texto va a preceder a cada enlace, es decir el clásico "ve a la sección X".
 - **lang:** Especifica la lengua que usará el documento, por ahora Talos solo soporta: español (**es**), inglés (**en**), hindi (**hi**) y vietnamita (**vi**) para todos los formatos de salida.
+- **titled_sections:** Si se pone en **true** y se han definido títulos en las secciones, los enlaces y los números de las secciones serán sustuídos por estos nombres. En el caso del formato pdf o docx, se colocan ambos al mismo tiempo.
+- **hide_sections:** Si está en **true**, oculta los títulos de las secciones o su número asignado. en el caso del formato pdf o docx, solo se oculta el título, pero se preservan los números.
