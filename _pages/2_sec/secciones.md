@@ -29,10 +29,12 @@ Las secciones también pueden tener un bloque de parámetros. Ejemplo:
 ---
 title: Una sección
 description: Un nodo más
+class: fight
 ---
 Y esto es el contenido de la seccion.
 ~~~
 
 - **title:** Sirve para asignarle un nombre de la sección, hace lo mismo que los títulos en línea descritos anteriormente. Si ambos títulos están definidos, el que acompaña al nombre de la sección tendrá mayor prioridad.
 - **description:** Puede usarse para hacer una pequeña descripción de lo que ocurre en la sección. Esta información será visible en el diagrama de flujo cuando el mouse repose sobre un nodo, en forma de tooltip.
+- **class:** Asigna una clase al nodo del gráfico.
 
