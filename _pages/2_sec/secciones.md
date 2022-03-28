@@ -8,7 +8,7 @@ layout: post
 
 Las secciones son las partes en las que se divide un librojuego. Una sección inicia con *#*, seguido de un espacio y luego el nombre de la sección.
 
-~~~markdown
+~~~
 # esto_es_una_seccion "Este es el título de la sección"
 Y esto es el contenido de la seccion.
 
@@ -24,7 +24,7 @@ Una linea en blanco indica la separacion entre párrafos.
 
 Las secciones también pueden tener un bloque de parámetros. Ejemplo:
 
-~~~markdown
+~~~
 # otra_seccion
 ---
 title: Una sección
