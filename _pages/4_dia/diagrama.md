@@ -40,13 +40,13 @@ shape: round
 ------------------
 ```
 
-Un bloque de definición usa la misma estructura que un bloque de metadatos, solo que inicia con por lo menos tres =, en vez de -, y lleva acompañado un nombre, que sigue la mismas reglas que los nombres de la secciones.
+Un bloque de definición usa la misma estructura que un bloque de metadatos, solo que inicia con por lo menos tres `=`, en vez de `-`, y lleva acompañado un nombre, que sigue la mismas reglas que los nombres de la secciones.
 
 - **fill:** Para especificar el color de relleno del nodo. El color puede ser dado en inglés o en código hexadecimal (en ese caso, debe envolver el código hexadecimal entre comillas)
 - **stroke:** Para especificar el color del borde.
 - **stroke_width:**  Para el grosor del borde.
 - **icon:** Para especificar un ícono. Puede buscar el nombre del ícono que desea usar en [esta web](https://fontawesome.com/search?m=free&s=solid).
-- **shape:** Especifica la forma del nodo. Puede ser circle, round, diamond y hexagon.
+- **shape:** Especifica la forma del nodo. Puede ser **circle**, **round**, **diamond** y **hexagon**.
 
 Puede usar los bloques de definición que desee, siempre y cuando estén ubicados entre el bloque de metadatos del principio y la primera sección, sea cual sea su tipo.
 
